@@ -1,0 +1,141 @@
+<!DOCTYPE html>			<!--sidan är skriven i html-->
+<html lang="sv">			<!--sidan är på Svenska-->
+
+	<head>
+        
+        <meta charset="utf-8">			<!--teckenkodning på sidan-->
+        <title>Teknik för de nyfikna - Hem</title>				<!--titel på sidan-->
+        <link href = "style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+	
+	<body>
+	
+		<header>	<!--våran header där navigations menyn(den globala menyn) ligger, samma på allla sidor-->
+			<h1>Teknik för de nyfikna</h1>
+
+			<nav>
+				<ul>
+					<li><a class="active" href="index.html">Start</a></li>	<!--start-->
+					
+					
+					<li><a href="CPU.html">CPU</a>	<!--CPU-->
+						<a class="dropdown" href="CPU2.html">mer om CPU</a>	<!--dropdown till CPU som leder till CPU2-->
+					</li>
+
+					
+					<li><a href="Moderkort.html">Moderkort</a>	<!--Moderkort-->
+						<a class="dropdown" href="Moderkort2.html">Mer om Moderkort</a>	<!--dropdown till Moderkort som leder till Moderkort2-->
+					</li>
+					
+					<li><a href="GPU.html">GPU</a>	<!--GPU-->
+						<a class="dropdown" href="GPU.html">Mer om GPU</a>	<!--dropdown till GPU som leder till GPU2-->
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+
+			<form action="action_page.php" method="POST" target="blank">	<!--form som ska leda till en separat php men det kommer inte funka då jag skulle behöva döpa om allt till php och använda en server...-->
+
+				<p>prenumerera till vårat nyhetsbrev:</p>
+
+				<label for="fname">förnamn:</label><br>
+					<input type="text" id="fname" name="fname"><br><br>		<!--input till form-->
+					  
+  				<label for="lname">efternamn:</label><br>
+					<input type="text" id="lname" name="lname"><br><br>		<!--input till form-->
+
+				<label for="email">email:</label><br>
+					<input type="text" id="email" name="email"><br><br>		<!--input till form-->
+
+				<label for="Password">lösenord:</label><br>
+					<input type="password" id="Password" name="Password"><br><br>		<!--input till form-->
+
+				<input type="radio" id="male" name="gender" value="male">		<!--input till form-->
+					<label for="male">Man</label><br>
+					
+				<input type="radio" id="female" name="gender" value="female">		<!--input till form-->
+					<label for="female">Kvinna</label><br>
+					
+				<input type="radio" id="other" name="gender" value="other">			<!--input till form-->
+					<label for="other">Annan</label><br><br>
+				
+				<p>Vad vill du veta mer om?</p>
+				
+				<input type="checkbox" id="CPU" name="interest" value="CPU">			<!--input till form-->
+					<label for="CPU">CPU</label><br>
+
+				<input type="checkbox" id="Moderkort" name="interest" value="Moderkort">			<!--input till form-->
+					<label for="other">Moderkort</label><br>
+
+				<input type="checkbox" id="GPU" name="interest" value="GPU">			<!--input till form-->
+					<label for="other">GPU</label><br><br>
+
+				<textarea name="comment">Annan datordel...</textarea><br><br>
+
+				<input type="submit" value="Submit">		<!--input till form-->
+					  
+			</form>
+
+			<article>	<!--artikel med info om sidan-->
+				
+				<a><img class="infoimg" src="info.jpg" alt="bild"></a>
+
+				<h2 class="rubrik">Teknik för de nyfikna</h2>
+
+				<p class="info">Vad är teknologi i teknik? Teknologi är kunskapen om och användandet av verktyg, teknik, hantverk, system eller organisationsmetoder. Teknologi kan definieras som 'läran om tekniken', alltså det som man sysslar med inom forskning och undervisning. Teknik däremot är den praktiska tillämpningen.</p>
+
+				<a><img class="oldPC" src="oldPC.jpg" alt="en gammal dator."></a>
+
+				<p class="info">Datateknik är teknologier för utveckling av datorers programvara och maskinvara.</p>
+
+				<br /><br />
+
+				<p class="info">Lite musik medans du läser?</p>
+
+				
+				<!--ljudklipp se css för width(rick rolled)-->
+				<audio id="audio" controls><source src="Rick Astley - Never Gonna Give You Up (Video).mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+				
+				<p><a class="info" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">source</a></p>		<!--Love Focus Hate-->
+
+			</article>
+
+		</main>
+		
+
+		<footer>		<!--footer densamma på alla sidor se css för styling-->
+			<h2>Teknik för de nyfikna av: Armin</h2>
+
+			<p>Teknik för de nyfikna är en sida som är menad att ge en liten inblick till hur olika datordelar funkar.</p>
+		
+			<p>email: arre02002@utb.vaxjo.se</p>
+		</footer>
+		
+		
+	</body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
