@@ -208,14 +208,14 @@
 		color: whitesmoke;
 	}
 
-	.CPUimg
+	.RyzenCPUimg
 	{
 		width: 600px;
 		height: 10vw;
 		padding: 40px;
 	}
 
-	.oldCPUimg
+	.IntelCPUimg
 	{
 		width: 12em;
 		float: right;
