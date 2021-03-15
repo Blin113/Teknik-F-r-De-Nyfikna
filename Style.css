@@ -110,7 +110,7 @@
 			'left bottom right'
 			'left bottom2 right';
 
-		grid-template-columns: 33vw 33vw 33vw;
+		grid-template-columns: 30vw 33vw 33vw;
 		grid-template-rows: auto auto auto;
 	}
 
@@ -210,15 +210,15 @@
 
 	.RyzenCPUimg
 	{
-		width: 600px;
+		margin-left: 25%;
 		height: 10vw;
-		padding: 40px;
+		padding: 20px;
 	}
 
 	.IntelCPUimg
 	{
-		width: 12em;
-		float: right;
+		width: 250px;
+		margin-left: 25%;
 	}
 
 	.GPUimg
