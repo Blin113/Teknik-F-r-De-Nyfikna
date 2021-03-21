@@ -1,340 +1,340 @@
 /*................lägger grund regler för min sida................*/ 
-	body	
-	{
-		font-family: Helvetica;
-		height:100vh;
-		width:100%;
-		margin:0;
-		padding:0;
-		background-color: rgb(12, 67, 64);
-		overflow-x: hidden;
-	}
+body	
+{
+	font-family: Helvetica;
+	height:100vh;
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color: rgb(12, 67, 64);
+	overflow-x: hidden;
+}
 
-	ul 
-	{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		background-color: rgb(16, 60, 57) ;	
-		display: flex;
-	}
+ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(16, 60, 57) ;	
+	display: flex;
+}
 
-	li a 
-	{
-		display: block;
-		color: #f0f0f0;
-		background-color: rgb(33, 106, 102);
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		white-space: nowrap;
-	}
-	
-	li a.active
-	{
-		background-color: rgb(33, 106, 102);
-	}
+li a 
+{
+	display: block;
+	color: #f0f0f0;
+	background-color: rgb(33, 106, 102);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	white-space: nowrap;
+}
 
-	li a:hover
-	{
-		background-color:  rgb(3, 30, 31);
-	}
-	
-	li:nth-child(1)
-	{
-		margin-left: auto;
-		margin-right: auto;
-	}
+li a.active
+{
+	background-color: rgb(33, 106, 102);
+}
 
-	li:last-child
-	{
-		margin-right: 30%;	/*navigerings knapparnas avstånd fårn höger sida*/
-	}
-	
-	h1
-	{
-		font-size: 30px;
-		padding: 10px;
-		margin: 0;
-	}
+li a:hover
+{
+	background-color:  rgb(3, 30, 31);
+}
 
-	.rubrik
-	{
-		padding-left: 1em;
-	}
+li:nth-child(1)
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li:last-child
+{
+	margin-right: 30%;	/*navigerings knapparnas avstånd fårn höger sida*/
+}
+
+h1
+{
+	font-size: 30px;
+	padding: 10px;
+	margin: 0;
+}
+
+.rubrik
+{
+	padding-left: 1em;
+}
 
 /*...............header css...............*/ 
-	header
-	{
-		font-family: 'DS-DIGIT';
-		font-size: 1.3em;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-		color: white;
-		background-color: rgb(6, 31, 30);
-		display: block;
-		width: 100vw;
-	}
+header
+{
+	font-family: 'DS-DIGIT';
+	font-size: 1.3em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: white;
+	background-color: rgb(6, 31, 30);
+	display: block;
+	width: 100vw;
+}
 
 /*...............dropdown css...............*/ 
-	.dropdown 
-	{
-		display: none;
-		position: absolute;		/*används så att mina dropdown items ska visas separat från resten av menyn, utanför*/
-		top: 100%;
-		z-index: 10;
-		left: 0;
-		
-	}
+.dropdown 
+{
+	display: none;
+	position: absolute;		/*används så att mina dropdown items ska visas separat från resten av menyn, utanför*/
+	top: 100%;
+	z-index: 10;
+	left: 0;
 	
-	li
-	{
-		position: relative;		/*änvänds för att dropdown menyerna ska visas på rätt ställe*/
-	}
+}
 
-	li:hover .dropdown	/*visar dropdown på menyn när du har musen över den*/ 
-	{
-		display: inline-block;
-	}
+li
+{
+	position: relative;		/*änvänds för att dropdown menyerna ska visas på rätt ställe*/
+}
+
+li:hover .dropdown	/*visar dropdown på menyn när du har musen över den*/ 
+{
+	display: inline-block;
+}
 
 /*...............Grid css...............*/ 
 
-	main	/*grid bas*/ 
-	{
-		font-family: Helvetica, sans-serif;
-		display: grid;
-		grid-template-areas: 
-			'left content right'
-			'left middle right'
-			'left bottom right'
-			'left bottom2 right';
+main	/*grid bas*/ 
+{
+	font-family: Helvetica, sans-serif;
+	display: grid;
+	grid-template-areas: 
+		'left content right'
+		'left middle right'
+		'left bottom right'
+		'left bottom2 right';
 
-		grid-template-columns: 30vw 33vw 33vw;
-		grid-template-rows: auto auto auto;
-	}
+	grid-template-columns: 30vw 33vw 33vw;
+	grid-template-rows: auto auto auto;
+}
 
-	section		/*utdelning av grid area*/ 
-	{
-		grid-area: content;
-		margin-bottom: 10vw;
-	}
+section		/*utdelning av grid area*/ 
+{
+	grid-area: content;
+	margin-bottom: 10vw;
+}
 
-	section.bottom		/*justering av grid area med användning av klassen bottom*/ 
-	{
-		grid-area: bottom;
-		padding: 0;
-		padding-bottom: 15vw;
-	}
+section.bottom		/*justering av grid area med användning av klassen bottom*/ 
+{
+	grid-area: bottom;
+	padding: 0;
+	padding-bottom: 15vw;
+}
 
-	section.bottom2		/*justering av grid area med användning av klassen bottom2*/ 
-	{
-		grid-area: bottom2;
-		padding: 0;
-	}
+section.bottom2		/*justering av grid area med användning av klassen bottom2*/ 
+{
+	grid-area: bottom2;
+	padding: 0;
+}
 
-	article		/*utdelning av grid area*/ 
-	{
-		grid-area: middle;
-		background-color: rgb(185, 184, 197);
-		margin-top: 5vw;
-		margin-bottom: 10vw;
-		border-radius: 10px;
-	}
+article		/*utdelning av grid area*/ 
+{
+	grid-area: middle;
+	background-color: rgb(185, 184, 197);
+	margin-top: 5vw;
+	margin-bottom: 10vw;
+	border-radius: 10px;
+}
 
-	article.articleadjust	/*justering av grid area med användning av klassen articleadjust*/
-	{
-		border-radius: 0px;
-		padding: 1em;
-		margin-bottom: 5vw;
-	}
+article.articleadjust	/*justering av grid area med användning av klassen articleadjust*/
+{
+	border-radius: 0px;
+	padding: 1em;
+	margin-bottom: 5vw;
+}
 
-	footer		/*footer regler*/
-	{
-		background-color: rgb(22, 39, 35);
-		height: 11vw;
-		padding-bottom: 2vw;
-	}
+footer		/*footer regler*/
+{
+	background-color: rgb(22, 39, 35);
+	height: 11vw;
+	padding-bottom: 2vw;
+}
 
-	footer h2	/*footer regler för h2*/
-	{
-		padding-left: 1%;
-		padding-top: 1%;
-		font-size: 1.5em;
-		color: whitesmoke;
-	}
+footer h2	/*footer regler för h2*/
+{
+	padding-left: 1%;
+	padding-top: 1%;
+	font-size: 1.5em;
+	color: whitesmoke;
+}
 
-	footer p	/*footer regler för p*/
-	{
-		font-size: 1em;
-		padding-top: 0em;
-		padding-left: 1%;
-		margin-top: 0em;
-		color: whitesmoke;
-	}
+footer p	/*footer regler för p*/
+{
+	font-size: 1em;
+	padding-top: 0em;
+	padding-left: 1%;
+	margin-top: 0em;
+	color: whitesmoke;
+}
 
 /*css klasser och regler för utplaceringa av text och bild*/ 
-	.infoimg
-	{
-		width: 96%;
-		padding: 0.7vw;
-	}
+.infoimg
+{
+	width: 96%;
+	padding: 0.7vw;
+}
 
-	.info
-	{
-		padding-left: 2em;
-		padding-right: 2em;
-	}
+.info
+{
+	padding-left: 2em;
+	padding-right: 2em;
+}
 
-	.oldPC
-	{
-		padding-left: 2em;
-		width: 50%;
-		float: left;
-		margin-right: 1em;
-		padding-bottom: 1em;
-	}
+.oldPC
+{
+	padding-left: 2em;
+	width: 50%;
+	float: left;
+	margin-right: 1em;
+	padding-bottom: 1em;
+}
 
-	.text
-	{
-		margin-top: 10vw;
-		padding: 2em;
-		color: whitesmoke;
-	}
-	
-	.moretext
-	{
-		padding-left: 2em;
-		color: whitesmoke;
-	}
+.text
+{
+	margin-top: 10vw;
+	padding: 2em;
+	color: whitesmoke;
+}
 
-	.RyzenCPUimg
-	{
-		margin-left: 25%;
-		height: 10vw;
-		padding: 20px;
-	}
+.moretext
+{
+	padding-left: 2em;
+	color: whitesmoke;
+}
 
-	.IntelCPUimg
-	{
-		width: 250px;
-		margin-left: 25%;
-	}
+.RyzenCPUimg
+{
+	margin-left: 25%;
+	height: 10vw;
+	padding: 20px;
+}
 
-	.GPUimg
-	{
-		width: 100%;
-	}
+.IntelCPUimg
+{
+	width: 250px;
+	margin-left: 25%;
+}
 
-	.GPUtxt
-	{
-		margin-top: 0;
-		color: whitesmoke;
-	}
+.GPUimg
+{
+	width: 100%;
+}
 
-	table, th, td 
-	{
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
+.GPUtxt
+{
+	margin-top: 0;
+	color: whitesmoke;
+}
 
-	table
-	{
-		width: 100%;
-		height: 10vw;
-	}
+table, th, td 
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
 
-	th
-	{
-		background-color: whitesmoke;
-	}
+table
+{
+	width: 100%;
+	height: 10vw;
+}
 
-	tr:nth-child(odd)
-	{
-		background-color: lightgray;
-	}
+th
+{
+	background-color: whitesmoke;
+}
 
-	tr:nth-child(even)
-	{
-		background-color: #808080;
-	}
+tr:nth-child(odd)
+{
+	background-color: lightgray;
+}
 
-	caption
-	{
-		background-color: antiquewhite;
-	}
+tr:nth-child(even)
+{
+	background-color: #808080;
+}
 
-	ol
-	{
-		padding-left: 3em;
-		color: whitesmoke;
-	}
+caption
+{
+	background-color: antiquewhite;
+}
 
-	#audio
-	{
-		width: 50%;
-		margin-left: 25%;
-	}
+ol
+{
+	padding-left: 3em;
+	color: whitesmoke;
+}
+
+#audio
+{
+	width: 50%;
+	margin-left: 25%;
+}
 
 /*..............formulär css..............*/
 
-	form
-	{
-		grid-area: right;
-		margin-left: 5vw;
-		background-color: rgb(185, 184, 197);
-		margin-top: 5vw;
-		padding: 0.5em;
-		width: 200px;
-		margin-bottom: auto;
-	}
+form
+{
+	grid-area: right;
+	margin-left: 5vw;
+	background-color: rgb(185, 184, 197);
+	margin-top: 5vw;
+	padding: 0.5em;
+	width: 200px;
+	margin-bottom: auto;
+}
 
 /*...............iframe css...............*/
 
-	.iframe-container 
-	{
-		overflow: visible;
-		padding-top: 56.25%;
-		position: relative;		/*placerar mina iframes på rätt ställe*/
-		padding: 2em;
-	}
+.iframe-container 
+{
+	overflow: visible;
+	padding-top: 56.25%;
+	position: relative;		/*placerar mina iframes på rätt ställe*/
+	padding: 2em;
+}
 
-	.iframe-container iframe 
-	{
-		border: 0;
-		height: 20vw;
-		width: 100%;
-		position: absolute;		/*används för att hela videon i iframen ska visas*/
-		top: 0;
-	}
+.iframe-container iframe 
+{
+	border: 0;
+	height: 20vw;
+	width: 100%;
+	position: absolute;		/*används för att hela videon i iframen ska visas*/
+	top: 0;
+}
 
 /*.................nedladdad font................*/
-	@font-face 
-	{ 
+@font-face 
+{ 
 
-		font-family: 'DS-DIGIT';
-		src: url('DS-DIGIT.TTF') format('truetype');
+	font-family: 'DS-DIGIT';
+	src: url('DS-DIGIT.TTF') format('truetype');
 
-	}
+}
 
 /*Love Focus Hate*/
 
-	p a:link 
-	{
-		color: rgb(0, 0, 0);
-	}
+p a:link 
+{
+	color: rgb(0, 0, 0);
+}
 
-	p a:visited 
-	{
-		color: rgb(58, 51, 112);
-	}
+p a:visited 
+{
+	color: rgb(58, 51, 112);
+}
 
-	p a:hover, a:focus
-	{
-		color: rgb(107, 165, 52);
-	}
+p a:hover, a:focus
+{
+	color: rgb(107, 165, 52);
+}
 
-	p a:active
-	{
-		color: rgb(110, 27, 27);
-	}
+p a:active
+{
+	color: rgb(110, 27, 27);
+}
