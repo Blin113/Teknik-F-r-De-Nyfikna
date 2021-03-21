@@ -48,7 +48,7 @@
 
 	li:last-child
 	{
-		margin-right: 20%;
+		margin-right: 30%;	/*navigerings knapparnas avstånd fårn höger sida*/
 	}
 	
 	h1
@@ -173,7 +173,7 @@
 		color: whitesmoke;
 	}
 
-/*css klasser och regler för utplaceringa av text och bild..........................................ÄNDRA NAMN PÅ ALLLLLLLLLT......................................................................*/ 
+/*css klasser och regler för utplaceringa av text och bild*/ 
 	.infoimg
 	{
 		width: 96%;
