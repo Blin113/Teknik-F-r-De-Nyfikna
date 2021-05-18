@@ -1,5 +1,5 @@
 <!DOCTYPE html>			<!--sidan är skriven i html-->
-<html lang="sv">			<!--sidan är på Svenska-->
+<html lang="sv">			<!--sidan är på svenska-->
 
 	<head>
         
@@ -38,31 +38,39 @@
 		
 		<main>
 
-			<form action="Action.html" method="">	<!--form som ska leda till en separat php men det kommer inte funka då jag skulle behöva döpa om allt till php och använda en server...-->
+			<form action="Action.html" method="POST">	<!--form som ska leda till en separat php men det kommer inte funka då jag skulle behöva döpa om allt till php och använda en server...-->
 
 				<p>prenumerera till vårat nyhetsbrev:</p>
 
-				<label for="fname">förnamn:</label><br>
-					<input type="text" id="fname" name="fname"><br><br>		<!--input till form-->
-					  
-  				<label for="lname">efternamn:</label><br>
-					<input type="text" id="lname" name="lname"><br><br>		<!--input till form-->
+				<fieldset>
 
-				<label for="email">email:</label><br>
-					<input type="text" id="email" name="email"><br><br>		<!--input till form-->
+					<legend>Uppgifter:</legend>
+					<label for="fname">förnamn:</label><br>
+						<input type="text" id="fname" name="fname"><br><br>		<!--input till form-->
+						
+					<label for="lname">efternamn:</label><br>
+						<input type="text" id="lname" name="lname"><br><br>		<!--input till form-->
 
-				<label for="Password">lösenord:</label><br>
-					<input type="password" id="Password" name="Password"><br><br>		<!--input till form-->
+					<label for="email">email:</label><br>
+						<input type="email" id="email" name="email"><br><br>		<!--input till form-->
 
-				<input type="radio" id="male" name="gender" value="male">		<!--input till form-->
-					<label for="male">Man</label><br>
-					
-				<input type="radio" id="female" name="gender" value="female">		<!--input till form-->
-					<label for="female">Kvinna</label><br>
-					
-				<input type="radio" id="other" name="gender" value="other">			<!--input till form-->
-					<label for="other">Annan</label><br><br>
-				
+					<label for="Password">lösenord:</label><br>
+						<input type="password" id="Password" name="Password"><br><br>		<!--input till form-->
+
+					<label for="birthday">Födelsedag:</label>
+						<input type="date" id="birthday" name="birthday"><br><br>
+
+					<label for="kön">kön:</label>
+
+					<select name="kön" id="kön">
+						<option value="none">---||---</option>
+						<option value="Man">Man</option>
+						<option value="Kvinna">Kvinna</option>
+						<option value="Annat">Annat</option>
+					</select>
+
+				</fieldset>
+
 				<p>Vad vill du veta mer om?</p>
 				
 				<input type="checkbox" id="CPU" name="interest" value="CPU">			<!--input till form-->
@@ -88,7 +96,10 @@
 
 				<p class="info">Vad är teknologi i teknik? Teknologi är kunskapen om och användandet av verktyg, teknik, hantverk, system eller organisationsmetoder. Teknologi kan definieras som 'läran om tekniken', alltså det som man sysslar med inom forskning och undervisning. Teknik däremot är den praktiska tillämpningen.</p>
 
-				<a><img class="oldPC" src="oldPC.jpg" alt="en gammal dator."></a>
+				<figure>
+					<img class="oldPC" src="oldPC.jpg" alt="en gammal dator.">
+					<figcaption>Fig.1 - gammal dator.</figcaption>
+				</figure>
 
 				<p class="info">Datateknik är teknologier för utveckling av datorers programvara och maskinvara.</p>
 
@@ -98,7 +109,7 @@
 
 				
 				<!--ljudklipp se css för width(rick rolled)-->
-				<audio id="audio" controls><source src="Rick Astley - Never Gonna Give You Up (Video).mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+				<audio id="audio" controls><source src="music.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
 				
 				<p><a class="info" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">source</a></p>		<!--Love Focus Hate-->
 

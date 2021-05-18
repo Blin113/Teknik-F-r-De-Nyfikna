@@ -32,7 +32,7 @@ li a
 
 li a.active
 {
-	background-color: rgb(33, 106, 102);
+	background-color: rgb(14, 41, 40);
 }
 
 li a:hover
@@ -154,45 +154,18 @@ footer		/*footer regler*/
 	background-color: rgb(22, 39, 35);
 	height: 11vw;
 	padding-bottom: 2vw;
-}
-
-footer h2	/*footer regler för h2*/
-{
-	padding-left: 1%;
-	padding-top: 1%;
-	font-size: 1.5em;
-	color: whitesmoke;
-}
-
-footer p	/*footer regler för p*/
-{
 	font-size: 1em;
-	padding-top: 0em;
+	padding-top: 1em;
 	padding-left: 1%;
 	margin-top: 0em;
 	color: whitesmoke;
 }
 
-/*css klasser och regler för utplaceringa av text och bild*/ 
-.infoimg
-{
-	width: 96%;
-	padding: 0.7vw;
-}
-
+/*css klasser och regler för utplaceringa av text*/ 
 .info
 {
 	padding-left: 2em;
 	padding-right: 2em;
-}
-
-.oldPC
-{
-	padding-left: 2em;
-	width: 50%;
-	float: left;
-	margin-right: 1em;
-	padding-bottom: 1em;
 }
 
 .text
@@ -206,6 +179,22 @@ footer p	/*footer regler för p*/
 {
 	padding-left: 2em;
 	color: whitesmoke;
+}
+
+/*css klasser och regler för utplaceringa av bild*/ 
+.infoimg
+{
+	width: 96%;
+	padding: 0.7vw;
+}
+
+.oldPC
+{
+	padding-left: 2em;
+	width: 50%;
+	float: left;
+	margin-right: 1em;
+	padding-bottom: 1em;
 }
 
 .RyzenCPUimg
@@ -226,12 +215,7 @@ footer p	/*footer regler för p*/
 	width: 100%;
 }
 
-.GPUtxt
-{
-	margin-top: 0;
-	color: whitesmoke;
-}
-
+/*............tabell............*/
 table, th, td 
 {
 	border: 1px solid black;
@@ -242,6 +226,10 @@ table
 {
 	width: 100%;
 	height: 10vw;
+}
+
+tr{
+	vertical-align: middle;
 }
 
 th
@@ -270,6 +258,7 @@ ol
 	color: whitesmoke;
 }
 
+/*........musik.......*/
 #audio
 {
 	width: 50%;
@@ -282,7 +271,7 @@ form
 {
 	grid-area: right;
 	margin-left: 5vw;
-	background-color: rgb(185, 184, 197);
+	background-color: hsl(245, 10%, 75%);
 	margin-top: 5vw;
 	padding: 0.5em;
 	width: 200px;
@@ -331,10 +320,34 @@ p a:visited
 
 p a:hover, a:focus
 {
-	color: rgb(107, 165, 52);
+	color: hsla(120,100%,50%,0.3);;
 }
 
 p a:active
 {
 	color: rgb(110, 27, 27);
+}
+
+@media screen and (max-width: 600px) {
+	main	/*grid bas*/ 
+	{
+		font-family: Helvetica, sans-serif;
+		display: grid;
+		grid-template-areas: 
+			'content'
+			'middle'
+			'bottom'
+			'bottom2';
+
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+	}
+	
+	form
+	{
+		grid-area: bottom;
+		margin: 12vw;
+		width: 75vw;
+	}
+
 }

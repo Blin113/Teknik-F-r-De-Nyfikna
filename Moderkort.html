@@ -1,7 +1,7 @@
 <!DOCTYPE html>			<!--sidan är skriven i html-->
-<html lang="sv">			<!--sidan är på Svenska-->
+<html lang="en">			<!--sidan är på engelska-->
 
-	<head>
+	<head lang="sv">
         
         <meta charset="utf-8">			<!--teckenkodning på sidan-->
         <title>Teknik för de nyfikna - Moderkort</title>				<!--titel på sidan-->
@@ -11,7 +11,7 @@
 	
 	<body>
 	
-		<header>	<!--våran header där navigations menyn(den globala menyn) ligger, samma på allla sidor-->
+		<header lang="sv">	<!--våran header där navigations menyn(den globala menyn) ligger, samma på allla sidor-->
 			<h1>Teknik för de nyfikna</h1>
 
 			<nav>
@@ -36,54 +36,58 @@
 			</nav>
 		</header>
 		
-        <main lang="en">
+        <main>
 			<section>
 
 				<article class="articleadjust">	<!--artikel som jag inte ville skulle se ut som andra artiklar så skapade en speciell klass(articleadjust) bara för artiklar att använda.-->
 					<p>A motherboard provides connectivity between the hardware components of a computer, like the processor (CPU), memory (RAM), hard drive, and video card. There are multiple types of motherboards, designed to fit different types and sizes of computers.</p>
 				</article>
 
-				<table lang="en">	<!--tabell på engelska-->
+				<table>	<!--tabell-->
 
-					<caption></caption>
+					<caption>the first row contains the name of the motherboard, the second row contains it's chiset and the third it's manufacturer</caption>	<!--kort förklaring av tabell-->
 
-					<tr>
-						<th>Name</th>
-						<th>Chipset</th>
-						<th>Manufaturer</th>
-					</tr>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Chipset</th>
+							<th>Manufaturer</th>
+						</tr>
+					</thead>
 
-					<tr>
-						<td>M54PE</td>
-						<td>Intel 430NX</td>
-						<td>Micronics</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td>M54PE</td>
+							<td>Intel 430NX</td>
+							<td>Micronics</td>
+						</tr>
 
-					<tr>
-						<td>RC440FX</td>
-						<td>Intel 440FX</td>
-						<td>Intel</td>
-					</tr>
+						<tr>
+							<td>RC440FX</td>
+							<td>Intel 440FX</td>
+							<td>Intel</td>
+						</tr>
 
-					<tr>
-						<td>AB-PB4</td>
-						<td>ALi M1489</td>
-						<td>Abit</td>
-					</tr>
+						<tr>
+							<td>AB-PB4</td>
+							<td>ALi M1489</td>
+							<td>Abit</td>
+						</tr>
 
-					<tr>
-						<td>AX6BC</td>
-						<td>Intel 440BX</td>
-						<td>AOpen</td>
-					</tr>
-
+						<tr>
+							<td>AX6BC</td>
+							<td>Intel 440BX</td>
+							<td>AOpen</td>
+						</tr>
+					</tbody>
+					<!--behöver ingen tfoot-->
 				</table>
 
 			</section>
 
 		</main>
 		
-		<footer>		<!--footer densamma på alla sidor se css för styling-->
+		<footer lang="sv">		<!--footer densamma på alla sidor se css för styling-->
 			<h2>Teknik för de nyfikna av: Armin</h2>
 
 			<p>Teknik för de nyfikna är en sida som är menad att ge en liten inblick till hur olika datordelar funkar.</p>
